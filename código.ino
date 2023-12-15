@@ -9,15 +9,15 @@ void setup()
   // Indicamos que pines serán entradas y cuales salidas
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(LED_AMARILLO, OUTPUT);
-  pinMode(RELÉ, OUTPUT);
-  pinMode(pulsador, INPUT);
+  pinMode(RELE, OUTPUT);
+  pinMode(PULSADOR, INPUT);
 }
 
 // Bucle del programa
 void loop()
 {
   // Condicional que comprueba si el pulsador está pulsado o no
-  if (digitalRead(pulsador) == LOW) {
+  if (digitalRead(PULSADOR) == LOW) {
     digitalWrite(LED_BUILTIN, HIGH);
   	delay(10000);
  	digitalWrite(LED_BUILTIN, LOW);
